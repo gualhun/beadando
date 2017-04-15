@@ -1,4 +1,4 @@
-package hu.me.controller;
+package hu.me.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -22,7 +22,6 @@ public class MovieController {
 
 	@Autowired
 	public MovieController(MovieService movieService) {
-		super();
 		this.movieService = movieService;
 	}
 	
