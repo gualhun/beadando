@@ -40,9 +40,9 @@ public class MovieController {
 		movieService.deleteMovie(id);		
 	}
 	
-	void updateExisting(@PathVariable("id")long id, @RequestBody MovieEntity newMovie) {
-		
-	}
+//	void updateExisting(@PathVariable("id")long id, @RequestBody MovieEntity newMovie) {
+//		
+//	}
 	
 	
 	

@@ -1,11 +1,13 @@
 package hu.me.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import hu.me.entity.MovieEntity;
 import hu.me.repository.MovieRepository;
 import hu.me.service.MovieService;
 
+@Service
 public class MovieServiceImp implements MovieService{
 	
 	MovieRepository movieRepository;
