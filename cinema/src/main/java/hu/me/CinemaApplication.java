@@ -13,7 +13,7 @@ public class CinemaApplication {
 	}
 }
 
-
+//aha
 //http://localhost:8181/h2-console/
 //postman adat felvitel:
 //{
