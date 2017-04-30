@@ -1,8 +1,11 @@
 package hu.me.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import hu.me.dao.MovieDao;
 import hu.me.entity.MovieEntity;
 import hu.me.repository.MovieRepository;
 import hu.me.service.MovieService;
@@ -11,11 +14,15 @@ import hu.me.service.MovieService;
 public class MovieServiceImp implements MovieService{
 	
 	MovieRepository movieRepository;
+	MovieDao movieDao;
+	
+
 	
 	@Autowired
-	public MovieServiceImp(MovieRepository movieRepository) {
+	public MovieServiceImp(MovieRepository movieRepository, MovieDao movieDao) {
 		super();
 		this.movieRepository = movieRepository;
+		this.movieDao = movieDao;
 	}
 
 	@Override
@@ -31,6 +38,18 @@ public class MovieServiceImp implements MovieService{
 	@Override
 	public void deleteMovie(long id) {
 		movieRepository.delete(id);
+	}
+
+	@Override
+	public List<MovieEntity> findByGenre() {
+		// TODO Auto-generated method stub
+		return movieDao.getMovieByGenre();
+	}
+
+	@Override
+	public List<MovieEntity> findByCinema() {
+		// TODO Auto-generated method stub
+		return movieDao.getMovieByCinema();
 	}
 
 }

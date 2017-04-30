@@ -1,5 +1,7 @@
 package hu.me.controllers;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -38,6 +40,19 @@ public class MovieController {
 	@DeleteMapping(path="/{id}")
 	void deleteExisting(@PathVariable("id")long id) {
 		movieService.deleteMovie(id);		
+	}
+	
+	
+	@GetMapping(path = "/findByGenre", produces=MediaType.APPLICATION_JSON_VALUE)
+	List<MovieEntity> findByGenre() {
+		return movieService.findByGenre();
+		//http://localhost:8282/findByGenre
+	}
+	
+	@GetMapping(path = "/findByCinema", produces=MediaType.APPLICATION_JSON_VALUE)
+	List<MovieEntity> findByCinema() {
+		return movieService.findByCinema();
+		//http://localhost:8282/findByCinema
 	}
 	
 //	void updateExisting(@PathVariable("id")long id, @RequestBody MovieEntity newMovie) {

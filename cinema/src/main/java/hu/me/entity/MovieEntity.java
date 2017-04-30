@@ -12,6 +12,7 @@ public class MovieEntity {
 	private Long id;
 	private String title;
 	private String genre;
+	private String cinema;
 	public Long getId() {
 		return id;
 	}
@@ -30,6 +31,13 @@ public class MovieEntity {
 	public void setGenre(String genre) {
 		this.genre = genre;
 	}
+	public String getCinema() {
+		return cinema;
+	}
+	public void setCinema(String cinema) {
+		this.cinema = cinema;
+	}
+	
 	
 	
 
