@@ -1,0 +1,49 @@
+package hu.me.service.impl;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class MovieServiceImpTest {
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void testMovieServiceImp() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testListAllMovie() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testNewMovie() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testDeleteMovie() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testFindByGenre() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testFindByCinema() {
+		fail("Not yet implemented");
+	}
+
+}
