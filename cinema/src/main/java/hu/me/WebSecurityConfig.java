@@ -18,6 +18,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		.antMatchers("/").permitAll().anyRequest().authenticated()
 		.and().formLogin().loginPage("/login").permitAll()
 .and().logout().permitAll();
+		
+		//login után kellett ez a sor, hogy betudjak lépni a h2-consolera
+		 http.headers().frameOptions().disable();
 	}
 	
 	@Autowired
