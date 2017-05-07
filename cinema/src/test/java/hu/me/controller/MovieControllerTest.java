@@ -46,4 +46,19 @@ public class MovieControllerTest {
 		fail("Not yet implemented");
 	}
 
+	@Test
+	public void testFindByCinema2() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testFindByAction() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testFindByDrama() {
+		fail("Not yet implemented");
+	}
+
 }
