@@ -2,9 +2,14 @@ package hu.me.dao;
 
 import static org.junit.Assert.*;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import hu.me.entity.MovieEntity;
 
 public class MovieDaoTest {
 
@@ -23,7 +28,11 @@ public class MovieDaoTest {
 
 	@Test
 	public void testGetMovieByGenre() {
-		fail("Not yet implemented");
+			List<MovieEntity> actual = Arrays.asList(new MovieEntity());
+		  List<MovieEntity> expected = Arrays.asList(new MovieEntity());
+
+//		  assertThat(actual, is(expected));
+//		  assertThat(actual, is(not(expected)));
 	}
 
 	@Test
