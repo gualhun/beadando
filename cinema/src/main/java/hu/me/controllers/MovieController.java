@@ -46,28 +46,34 @@ public class MovieController {
 	@GetMapping(path = "/findByGenre", produces=MediaType.APPLICATION_JSON_VALUE)
 	List<MovieEntity> findByGenre() {
 		return movieService.findByGenre();
-		//http://localhost:8282/findByGenre
+		//http://localhost:8282/movie/findByGenre
 	}
 	
 	@GetMapping(path = "/findByCinema", produces=MediaType.APPLICATION_JSON_VALUE)
 	List<MovieEntity> findByCinema() {
 		return movieService.findByCinema();
-		//http://localhost:8282/findByCinema
+	//localhost:8282/movie/findByCinema
+	}
+	
+	@GetMapping(path = "/findByCinema2", produces=MediaType.APPLICATION_JSON_VALUE)
+	List<MovieEntity> findByCinema2() {
+		return movieService.findByCinema2();
+	//localhost:8282/movie/findByCinema
 	}
 	
 
 	
-//	@GetMapping(path = "/findByAction", produces=MediaType.APPLICATION_JSON_VALUE)
-//	List<MovieEntity> findByAction() {
-//		return movieService.findByAction();
-//		//http://localhost:8282/findByAction
-//	}
-//	
-//	@GetMapping(path = "/findByDrama", produces=MediaType.APPLICATION_JSON_VALUE)
-//	List<MovieEntity> findByDrama() {
-//		return movieService.findByDrama();
-//		//http://localhost:8282/findByDrama
-//	}
+	@GetMapping(path = "/findByAction", produces=MediaType.APPLICATION_JSON_VALUE)
+	List<MovieEntity> findByAction() {
+		return movieService.findByAction();
+		//http://localhost:8282/findByAction
+	}
+	
+	@GetMapping(path = "/findByDrama", produces=MediaType.APPLICATION_JSON_VALUE)
+	List<MovieEntity> findByDrama() {
+		return movieService.findByDrama();
+		//http://localhost:8282/findByDrama
+	}
 	
 	
 	

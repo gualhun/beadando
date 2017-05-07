@@ -35,29 +35,37 @@ public class MovieDao {
 	public List<MovieEntity> getMovieByCinema() {
 		Criteria cr = sessionFactory.getCurrentSession().createCriteria(MovieEntity.class);
 		
+		cr.add(Restrictions.like("cinema", "Cinema1"));
+		
+		return cr.list();
+	}
+	
+	@Transactional
+	public List<MovieEntity> getMovieByCinema2() {
+		Criteria cr = sessionFactory.getCurrentSession().createCriteria(MovieEntity.class);
+		
 		cr.add(Restrictions.like("cinema", "Cinema2"));
 		
 		return cr.list();
 	}
 	
-
-	
-//	@Transactional
-//	public List<MovieEntity> getMovieByAction() {
-//		Criteria cr = sessionFactory.getCurrentSession().createCriteria(MovieEntity.class);
-//		
-//		cr.add(Restrictions.like("genre", "Action"));
-//		
-//		return cr.list();
-//	}
+//
+	@Transactional
+	public List<MovieEntity> getMovieByAction() {
+		Criteria cr = sessionFactory.getCurrentSession().createCriteria(MovieEntity.class);
+		
+		cr.add(Restrictions.like("genre", "Action"));
+		
+		return cr.list();
+	}
 //	
-//	@Transactional
-//	public List<MovieEntity> getMovieByDrama() {
-//		Criteria cr = sessionFactory.getCurrentSession().createCriteria(MovieEntity.class);
-//		
-//		cr.add(Restrictions.like("genre", "Drama"));
-//		
-//		return cr.list();
-//	}
+	@Transactional
+	public List<MovieEntity> getMovieByDrama() {
+		Criteria cr = sessionFactory.getCurrentSession().createCriteria(MovieEntity.class);
+		
+		cr.add(Restrictions.like("genre", "Drama"));
+		
+		return cr.list();
+	}
 
 }
