@@ -10,5 +10,8 @@ public interface MovieService {
 	void deleteMovie (long id);
 	List<MovieEntity> findByGenre();
 	List<MovieEntity> findByCinema();
+//	List<MovieEntity> findByAction();
+//	List<MovieEntity> findByDrama();
+	
 
 }

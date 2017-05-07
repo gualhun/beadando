@@ -40,5 +40,7 @@ public class MovieServiceTest {
 	public void testFindByCinema() {
 		fail("Not yet implemented");
 	}
+	
+	
 
 }

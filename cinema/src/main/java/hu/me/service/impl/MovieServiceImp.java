@@ -52,4 +52,17 @@ public class MovieServiceImp implements MovieService{
 		return movieDao.getMovieByCinema();
 	}
 
+//	@Override
+//	public List<MovieEntity> findByAction() {
+//		// TODO Auto-generated method stub
+//		return movieDao.getMovieByAction();
+//	}
+//
+//	@Override
+//	public List<MovieEntity> findByDrama() {
+//		// TODO Auto-generated method stub
+//		return movieDao.getMovieByDrama();
+//	}
+
+	
 }

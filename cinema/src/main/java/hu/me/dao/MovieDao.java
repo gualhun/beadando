@@ -39,5 +39,25 @@ public class MovieDao {
 		
 		return cr.list();
 	}
+	
+
+	
+//	@Transactional
+//	public List<MovieEntity> getMovieByAction() {
+//		Criteria cr = sessionFactory.getCurrentSession().createCriteria(MovieEntity.class);
+//		
+//		cr.add(Restrictions.like("genre", "Action"));
+//		
+//		return cr.list();
+//	}
+//	
+//	@Transactional
+//	public List<MovieEntity> getMovieByDrama() {
+//		Criteria cr = sessionFactory.getCurrentSession().createCriteria(MovieEntity.class);
+//		
+//		cr.add(Restrictions.like("genre", "Drama"));
+//		
+//		return cr.list();
+//	}
 
 }

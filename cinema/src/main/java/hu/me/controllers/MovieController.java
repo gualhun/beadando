@@ -55,10 +55,19 @@ public class MovieController {
 		//http://localhost:8282/findByCinema
 	}
 	
-//	void updateExisting(@PathVariable("id")long id, @RequestBody MovieEntity newMovie) {
-//		
-//	}
+
 	
+//	@GetMapping(path = "/findByAction", produces=MediaType.APPLICATION_JSON_VALUE)
+//	List<MovieEntity> findByAction() {
+//		return movieService.findByAction();
+//		//http://localhost:8282/findByAction
+//	}
+//	
+//	@GetMapping(path = "/findByDrama", produces=MediaType.APPLICATION_JSON_VALUE)
+//	List<MovieEntity> findByDrama() {
+//		return movieService.findByDrama();
+//		//http://localhost:8282/findByDrama
+//	}
 	
 	
 	
