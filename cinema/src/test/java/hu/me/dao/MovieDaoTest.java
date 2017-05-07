@@ -31,4 +31,19 @@ public class MovieDaoTest {
 		fail("Not yet implemented");
 	}
 
+	@Test
+	public void testGetMovieByCinema2() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetMovieByAction() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetMovieByDrama() {
+		fail("Not yet implemented");
+	}
+
 }
