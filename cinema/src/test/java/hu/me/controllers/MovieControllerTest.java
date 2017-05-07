@@ -1,4 +1,4 @@
-package hu.me.service.impl;
+package hu.me.controllers;
 
 import static org.junit.Assert.*;
 
@@ -6,7 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class MovieServiceImpTest {
+public class MovieControllerTest {
 
 	@Before
 	public void setUp() throws Exception {
@@ -17,22 +17,22 @@ public class MovieServiceImpTest {
 	}
 
 	@Test
-	public void testMovieServiceImp() {
+	public void testMovieController() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testListAllMovie() {
+	public void testList() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testNewMovie() {
+	public void testCreateNew() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testDeleteMovie() {
+	public void testDeleteExisting() {
 		fail("Not yet implemented");
 	}
 

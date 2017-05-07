@@ -1,4 +1,4 @@
-package hu.me.controller;
+package hu.me.service;
 
 import static org.junit.Assert.*;
 
@@ -6,7 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class UserControllerTest {
+public class CostumerServiceTest {
 
 	@Before
 	public void setUp() throws Exception {
@@ -17,7 +17,17 @@ public class UserControllerTest {
 	}
 
 	@Test
-	public void test() {
+	public void testListAllCostumer() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testNewCostumer() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testDeleteCostumer() {
 		fail("Not yet implemented");
 	}
 

@@ -1,4 +1,4 @@
-package hu.me.controller;
+package hu.me.controllers;
 
 import static org.junit.Assert.*;
 

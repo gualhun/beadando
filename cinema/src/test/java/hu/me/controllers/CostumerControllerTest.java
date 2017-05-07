@@ -1,4 +1,4 @@
-package hu.me.controller;
+package hu.me.controllers;
 
 import static org.junit.Assert.*;
 
@@ -6,7 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class MovieControllerTest {
+public class CostumerControllerTest {
 
 	@Before
 	public void setUp() throws Exception {
@@ -17,7 +17,7 @@ public class MovieControllerTest {
 	}
 
 	@Test
-	public void testMovieController() {
+	public void testCostumerController() {
 		fail("Not yet implemented");
 	}
 
@@ -33,31 +33,6 @@ public class MovieControllerTest {
 
 	@Test
 	public void testDeleteExisting() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testFindByGenre() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testFindByCinema() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testFindByCinema2() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testFindByAction() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testFindByDrama() {
 		fail("Not yet implemented");
 	}
 
