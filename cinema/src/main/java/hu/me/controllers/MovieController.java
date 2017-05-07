@@ -66,13 +66,13 @@ public class MovieController {
 	@GetMapping(path = "/findByAction", produces=MediaType.APPLICATION_JSON_VALUE)
 	List<MovieEntity> findByAction() {
 		return movieService.findByAction();
-		//http://localhost:8282/findByAction
+		//http://localhost:8282/movie/findByAction
 	}
 	
 	@GetMapping(path = "/findByDrama", produces=MediaType.APPLICATION_JSON_VALUE)
 	List<MovieEntity> findByDrama() {
 		return movieService.findByDrama();
-		//http://localhost:8282/findByDrama
+		//http://localhost:8282/movie/findByDrama
 	}
 	
 	
